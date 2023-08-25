@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic-portolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: rgb(3, 3, 49);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .bluepurple {
+      color: blueviolet
+    }
+
+    .purple {
+      color: rgb(82, 13, 132)
+    }
+
+    .text-gray {
+      color: grey
+    }
+
+    .secondSection h1 {
+      font-size: 1.8rem;
+    }
+
+    .firstNav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Adjust the z-index value as needed */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 85px;
+      background-color: rgb(7, 7, 87);
+    }
+
+    .pContainer {
+      background-color: rgb(18 18 80);
+    }
+
+    .container {
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container .abt {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .aboutCards {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+
+    /* .logo {
+      border-radius: 50%;
+      border: 5px solid rgb(18 18 80);
+      padding-bottom: 1px;
+      width: 12vw;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    } */
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid rgb(18 18 80);
+      position: relative;
+      bottom: 50px
+    }
+
+
+    .firstNav ul {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .firstNav ul li {
+      list-style: none;
+      margin: 0 24px;
+    }
+
+    .firstNav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .firstNav ul li a:hover {
+      color: rgb(152, 152, 229);
+      font-size: 1.02rem;
+    }
+    .firstNav .left{
+      
+      position:relative;
+      right: 110px;
+    }
+    .firstNav img {
+      position:relative;
+      left: 70px;
+      width: 5vw;
+    }
+
+    .aboutMeNav {
+      margin-bottom: 4vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    div.left {
+      font-size: 1.8rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 97vh;
+    }
+
+    .rightSection {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+    }
+
+    .rightSection img {
+      width: 120%;
+      margin: 30px 0px;
+    }
+
+
+    .secondSection {
+      margin: auto;
+      max-width: 80vw;
+      height: 80vh;
+    }
+
+    .hr {
+      border: 0;
+      background-color: rgb(83, 83, 154);
+      height: 1.2px;
+    }
+
+    body {
+      background-color: rgb(3, 3, 49);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer {
+      background-color: rgb(14, 14, 62);
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .footer p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Additional styling for your other sections goes here */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="firstNav">
+      <img src="/img/cosmic_1.png" alt="logo">
+      <div class="left">Cosmic's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#firstSection">Home</a></li>
+          <li><a href="#secondSection">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="firstSection" class="firstSection">
+      <div class="leftSection">
+        Hi, My Name Is <span class="bluepurple">Cosmic</span>
+        <div> I Am <span class="purple"><span id="element"></span></span></div>
+      </div>
+      <div class="rightSection">
+        <img src="img/bg.png">
+      </div>
+    </section>
+    <section id="secondSection" class="secondSection">
+      <hr class="hr">
+      <br><br>
+      <br>
+      <div class="pContainer">
+        <div class="logo-container">
+          <img class="logo" src="img/cosmic_1.png" alt="logo" data-aos="fade-left">
+        </div>
+        <nav class="aboutMeNav">
+          <h1>About me</h1>
+        </nav>
+
+        <div class="container">
+
+          <div class="aboutCards">
+            <h2>Subtitle Enthusiast and Student</h3>
+              <br>
+              <h4>I'm a student with a passion for precision and storytelling. Subtitling is my craft, and I specialize
+                in
+                transforming spoken words into written gems. Whether it's videos, films, or any kind of content, I'm
+                your
+                go-to person for crafting accurate and engaging subtitles that enhance the viewer's experience.
+              </h4>
+          </div>
+          <div class="aboutCards">
+            <h2>Budding web dev</h2>
+            <br>
+            <h4>When I'm not in the world of subtitles, I'm diving into the world of web development. I might call
+              myself
+              a "basic" web developer, but trust me, I'm always pushing boundaries to create functional and visually
+              appealing websites. And let's talk about typing - my fingers dance on the keyboard at a pace that even
+              surprises me sometimes!</h4>
+          </div>
+          <div class="aboutCards">
+            <h2>Affordable Excellence</h2>
+            <br>
+            <h4>Affordability is my mantra. Quality services don't need to be expensive. Whether it's subtitles that
+              speak
+              volumes or websites that make an impact, I'm all about delivering top-notch results at wallet-friendly
+              rates.
+            </h4>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2023 All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer.', 'Subtitler.', 'Ai Specialist.'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</body>
+
+</html>
